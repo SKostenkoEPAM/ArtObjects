@@ -22,9 +22,17 @@
 		352902042BD9D996007A4088 /* ArtObjectsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902032BD9D996007A4088 /* ArtObjectsRequestMock.swift */; };
 		3529020A2BD9DC7D007A4088 /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902092BD9DC7D007A4088 /* RequestManagerTests.swift */; };
 		3529020E2BDA4780007A4088 /* ArtObjectsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3529020D2BDA4780007A4088 /* ArtObjectsMock.json */; };
+		352902172BDA4EB8007A4088 /* ArtObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902162BDA4EB8007A4088 /* ArtObjectsViewController.swift */; };
+		352902192BDA4EC7007A4088 /* ArtObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902182BDA4EC7007A4088 /* ArtObjectsView.swift */; };
+		3529021B2BDA79E8007A4088 /* ArtObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529021A2BDA79E8007A4088 /* ArtObjectCell.swift */; };
+		352902212BDA9C8C007A4088 /* ArtObjectsSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902202BDA9C8C007A4088 /* ArtObjectsSectionHeaderView.swift */; };
+		352902232BDA9FAE007A4088 /* ArtObjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902222BDA9FAE007A4088 /* ArtObjectsViewModel.swift */; };
+		352902252BDB9787007A4088 /* ArtObjectsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352902242BDB9787007A4088 /* ArtObjectsFooterView.swift */; };
+		352902282BDBC90C007A4088 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 352902272BDBC90C007A4088 /* Kingfisher */; };
+		3529022C2BDBD8B5007A4088 /* ArtObjectsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529022B2BDBD8B5007A4088 /* ArtObjectsSection.swift */; };
+		3529022F2BDBE947007A4088 /* PaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529022E2BDBE947007A4088 /* PaintingViewController.swift */; };
 		35EEBD572BD979B200537B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEBD562BD979B200537B18 /* AppDelegate.swift */; };
 		35EEBD592BD979B200537B18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEBD582BD979B200537B18 /* SceneDelegate.swift */; };
-		35EEBD5B2BD979B200537B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEBD5A2BD979B200537B18 /* ViewController.swift */; };
 		35EEBD602BD979B300537B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35EEBD5F2BD979B300537B18 /* Assets.xcassets */; };
 		35EEBD632BD979B300537B18 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 35EEBD622BD979B300537B18 /* Base */; };
 		35EEBD6E2BD979B400537B18 /* ArtObjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEBD6D2BD979B400537B18 /* ArtObjectsTests.swift */; };
@@ -65,10 +73,17 @@
 		352902032BD9D996007A4088 /* ArtObjectsRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsRequestMock.swift; sourceTree = "<group>"; };
 		352902092BD9DC7D007A4088 /* RequestManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
 		3529020D2BDA4780007A4088 /* ArtObjectsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ArtObjectsMock.json; sourceTree = "<group>"; };
+		352902162BDA4EB8007A4088 /* ArtObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsViewController.swift; sourceTree = "<group>"; };
+		352902182BDA4EC7007A4088 /* ArtObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsView.swift; sourceTree = "<group>"; };
+		3529021A2BDA79E8007A4088 /* ArtObjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectCell.swift; sourceTree = "<group>"; };
+		352902202BDA9C8C007A4088 /* ArtObjectsSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsSectionHeaderView.swift; sourceTree = "<group>"; };
+		352902222BDA9FAE007A4088 /* ArtObjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsViewModel.swift; sourceTree = "<group>"; };
+		352902242BDB9787007A4088 /* ArtObjectsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsFooterView.swift; sourceTree = "<group>"; };
+		3529022B2BDBD8B5007A4088 /* ArtObjectsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsSection.swift; sourceTree = "<group>"; };
+		3529022E2BDBE947007A4088 /* PaintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingViewController.swift; sourceTree = "<group>"; };
 		35EEBD532BD979B200537B18 /* ArtObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EEBD562BD979B200537B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35EEBD582BD979B200537B18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35EEBD5A2BD979B200537B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		35EEBD5F2BD979B300537B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35EEBD622BD979B300537B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35EEBD642BD979B300537B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				352902282BDBC90C007A4088 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +212,51 @@
 			path = Painting;
 			sourceTree = "<group>";
 		};
+		352902152BDA4E94007A4088 /* ArtObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3529022A2BDBD78A007A4088 /* Cells */,
+				352902292BDBD73C007A4088 /* SupplementaryViews */,
+				352902162BDA4EB8007A4088 /* ArtObjectsViewController.swift */,
+				352902182BDA4EC7007A4088 /* ArtObjectsView.swift */,
+				352902222BDA9FAE007A4088 /* ArtObjectsViewModel.swift */,
+				3529022B2BDBD8B5007A4088 /* ArtObjectsSection.swift */,
+			);
+			path = ArtObjects;
+			sourceTree = "<group>";
+		};
+		3529021D2BDA7FBA007A4088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		352902292BDBD73C007A4088 /* SupplementaryViews */ = {
+			isa = PBXGroup;
+			children = (
+				352902202BDA9C8C007A4088 /* ArtObjectsSectionHeaderView.swift */,
+				352902242BDB9787007A4088 /* ArtObjectsFooterView.swift */,
+			);
+			path = SupplementaryViews;
+			sourceTree = "<group>";
+		};
+		3529022A2BDBD78A007A4088 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3529021A2BDA79E8007A4088 /* ArtObjectCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3529022D2BDBE92B007A4088 /* Painting */ = {
+			isa = PBXGroup;
+			children = (
+				3529022E2BDBE947007A4088 /* PaintingViewController.swift */,
+			);
+			path = Painting;
+			sourceTree = "<group>";
+		};
 		35EEBD4A2BD979B200537B18 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +264,7 @@
 				35EEBD6C2BD979B400537B18 /* ArtObjectsTests */,
 				35EEBD762BD979B400537B18 /* ArtObjectsUITests */,
 				35EEBD542BD979B200537B18 /* Products */,
+				3529021D2BDA7FBA007A4088 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -221,9 +283,10 @@
 			children = (
 				352901F12BD9B361007A4088 /* Model */,
 				352901E62BD9A932007A4088 /* API */,
+				352902152BDA4E94007A4088 /* ArtObjects */,
+				3529022D2BDBE92B007A4088 /* Painting */,
 				35EEBD562BD979B200537B18 /* AppDelegate.swift */,
 				35EEBD582BD979B200537B18 /* SceneDelegate.swift */,
-				35EEBD5A2BD979B200537B18 /* ViewController.swift */,
 				35EEBD5F2BD979B300537B18 /* Assets.xcassets */,
 				35EEBD612BD979B300537B18 /* LaunchScreen.storyboard */,
 				35EEBD642BD979B300537B18 /* Info.plist */,
@@ -265,6 +328,9 @@
 			dependencies = (
 			);
 			name = ArtObjects;
+			packageProductDependencies = (
+				352902272BDBC90C007A4088 /* Kingfisher */,
+			);
 			productName = ArtObjects;
 			productReference = 35EEBD532BD979B200537B18 /* ArtObjects.app */;
 			productType = "com.apple.product-type.application";
@@ -337,6 +403,9 @@
 				Base,
 			);
 			mainGroup = 35EEBD4A2BD979B200537B18;
+			packageReferences = (
+				352902262BDBC8F9007A4088 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 35EEBD542BD979B200537B18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -381,19 +450,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				352901EE2BD9B132007A4088 /* RequestError.swift in Sources */,
-				35EEBD5B2BD979B200537B18 /* ViewController.swift in Sources */,
+				352902232BDA9FAE007A4088 /* ArtObjectsViewModel.swift in Sources */,
+				3529022C2BDBD8B5007A4088 /* ArtObjectsSection.swift in Sources */,
 				352902002BD9D2F0007A4088 /* RequestManager.swift in Sources */,
 				352901F52BD9B970007A4088 /* APIManager.swift in Sources */,
 				352901F92BD9C44A007A4088 /* Painting.swift in Sources */,
 				35EEBD572BD979B200537B18 /* AppDelegate.swift in Sources */,
 				352901EC2BD9ADE9007A4088 /* APIConstants.swift in Sources */,
+				3529021B2BDA79E8007A4088 /* ArtObjectCell.swift in Sources */,
 				352901F02BD9B1EC007A4088 /* ArtObjectsRequest.swift in Sources */,
 				352901E82BD9A997007A4088 /* Request.swift in Sources */,
 				352901EA2BD9AA02007A4088 /* RequestMethod.swift in Sources */,
 				352901F32BD9B36C007A4088 /* Artwork.swift in Sources */,
+				352902192BDA4EC7007A4088 /* ArtObjectsView.swift in Sources */,
 				35EEBD592BD979B200537B18 /* SceneDelegate.swift in Sources */,
+				3529022F2BDBE947007A4088 /* PaintingViewController.swift in Sources */,
+				352902172BDA4EB8007A4088 /* ArtObjectsViewController.swift in Sources */,
+				352902252BDB9787007A4088 /* ArtObjectsFooterView.swift in Sources */,
 				352902022BD9D4D6007A4088 /* DataParser.swift in Sources */,
 				352901F72BD9C36F007A4088 /* PaintingRequest.swift in Sources */,
+				352902212BDA9C8C007A4088 /* ArtObjectsSectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +809,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		352902262BDBC8F9007A4088 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		352902272BDBC90C007A4088 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 352902262BDBC8F9007A4088 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35EEBD4B2BD979B200537B18 /* Project object */;
 }
