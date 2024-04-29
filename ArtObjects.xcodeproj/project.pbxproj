@@ -31,6 +31,10 @@
 		352902282BDBC90C007A4088 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 352902272BDBC90C007A4088 /* Kingfisher */; };
 		3529022C2BDBD8B5007A4088 /* ArtObjectsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529022B2BDBD8B5007A4088 /* ArtObjectsSection.swift */; };
 		3529022F2BDBE947007A4088 /* PaintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529022E2BDBE947007A4088 /* PaintingViewController.swift */; };
+		3544459E2BDF9B6300FC216D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3544459D2BDF9B6300FC216D /* UIColor+Extensions.swift */; };
+		35A7548E2BDC42F80061734F /* PaintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7548D2BDC42F80061734F /* PaintingView.swift */; };
+		35A754902BDC4C320061734F /* PaintingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A7548F2BDC4C320061734F /* PaintingViewModel.swift */; };
+		35CA1CA32BDFC6B5004D47DF /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA1CA22BDFC6B5004D47DF /* MakerView.swift */; };
 		35EEBD572BD979B200537B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEBD562BD979B200537B18 /* AppDelegate.swift */; };
 		35EEBD592BD979B200537B18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EEBD582BD979B200537B18 /* SceneDelegate.swift */; };
 		35EEBD602BD979B300537B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35EEBD5F2BD979B300537B18 /* Assets.xcassets */; };
@@ -81,6 +85,10 @@
 		352902242BDB9787007A4088 /* ArtObjectsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsFooterView.swift; sourceTree = "<group>"; };
 		3529022B2BDBD8B5007A4088 /* ArtObjectsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectsSection.swift; sourceTree = "<group>"; };
 		3529022E2BDBE947007A4088 /* PaintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingViewController.swift; sourceTree = "<group>"; };
+		3544459D2BDF9B6300FC216D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		35A7548D2BDC42F80061734F /* PaintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingView.swift; sourceTree = "<group>"; };
+		35A7548F2BDC4C320061734F /* PaintingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingViewModel.swift; sourceTree = "<group>"; };
+		35CA1CA22BDFC6B5004D47DF /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 		35EEBD532BD979B200537B18 /* ArtObjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtObjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35EEBD562BD979B200537B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35EEBD582BD979B200537B18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -252,9 +260,28 @@
 		3529022D2BDBE92B007A4088 /* Painting */ = {
 			isa = PBXGroup;
 			children = (
+				35CA1CA12BDFC69E004D47DF /* Views */,
 				3529022E2BDBE947007A4088 /* PaintingViewController.swift */,
+				35A7548F2BDC4C320061734F /* PaintingViewModel.swift */,
 			);
 			path = Painting;
+			sourceTree = "<group>";
+		};
+		3544459C2BDF9B5000FC216D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3544459D2BDF9B6300FC216D /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35CA1CA12BDFC69E004D47DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35A7548D2BDC42F80061734F /* PaintingView.swift */,
+				35CA1CA22BDFC6B5004D47DF /* MakerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		35EEBD4A2BD979B200537B18 = {
@@ -281,6 +308,7 @@
 		35EEBD552BD979B200537B18 /* ArtObjects */ = {
 			isa = PBXGroup;
 			children = (
+				3544459C2BDF9B5000FC216D /* Extensions */,
 				352901F12BD9B361007A4088 /* Model */,
 				352901E62BD9A932007A4088 /* API */,
 				352902152BDA4E94007A4088 /* ArtObjects */,
@@ -451,8 +479,10 @@
 			files = (
 				352901EE2BD9B132007A4088 /* RequestError.swift in Sources */,
 				352902232BDA9FAE007A4088 /* ArtObjectsViewModel.swift in Sources */,
+				35A7548E2BDC42F80061734F /* PaintingView.swift in Sources */,
 				3529022C2BDBD8B5007A4088 /* ArtObjectsSection.swift in Sources */,
 				352902002BD9D2F0007A4088 /* RequestManager.swift in Sources */,
+				35CA1CA32BDFC6B5004D47DF /* MakerView.swift in Sources */,
 				352901F52BD9B970007A4088 /* APIManager.swift in Sources */,
 				352901F92BD9C44A007A4088 /* Painting.swift in Sources */,
 				35EEBD572BD979B200537B18 /* AppDelegate.swift in Sources */,
@@ -467,7 +497,9 @@
 				3529022F2BDBE947007A4088 /* PaintingViewController.swift in Sources */,
 				352902172BDA4EB8007A4088 /* ArtObjectsViewController.swift in Sources */,
 				352902252BDB9787007A4088 /* ArtObjectsFooterView.swift in Sources */,
+				3544459E2BDF9B6300FC216D /* UIColor+Extensions.swift in Sources */,
 				352902022BD9D4D6007A4088 /* DataParser.swift in Sources */,
+				35A754902BDC4C320061734F /* PaintingViewModel.swift in Sources */,
 				352901F72BD9C36F007A4088 /* PaintingRequest.swift in Sources */,
 				352902212BDA9C8C007A4088 /* ArtObjectsSectionHeaderView.swift in Sources */,
 			);

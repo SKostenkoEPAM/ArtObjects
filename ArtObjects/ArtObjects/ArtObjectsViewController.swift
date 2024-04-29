@@ -167,7 +167,8 @@ extension ArtObjectsViewController: UIScrollViewDelegate {
   }
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    navigationController?.pushViewController(PaintingViewController(), animated: true)
+    let artObject = viewModel.artObject(at: indexPath)
+    navigationController?.pushViewController(PaintingViewController(artObject: artObject), animated: true)
   }
 }
 
