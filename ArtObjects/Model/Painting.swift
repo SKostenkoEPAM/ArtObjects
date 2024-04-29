@@ -10,8 +10,8 @@ import Foundation
 struct Painting: Decodable {
   let id: String
   let title: String
-  let description: String
-  let imageURL: URL
+  let description: String?
+  let image: Image
   let makers: [Maker]
   let colors: [String]
   
@@ -23,17 +23,13 @@ struct Painting: Decodable {
     case id = "objectNumber"
     case title
     case description = "plaqueDescriptionEnglish"
-    case imageURL = "webImage"
+    case image = "webImage"
     case makers = "principalMakers"
     case colors = "normalizedColors"
   }
   
   enum ColorKeys: CodingKey {
     case hex
-  }
-  
-  enum ImageKeys: CodingKey {
-    case url
   }
   
   init(from decoder: any Decoder) throws {
@@ -44,13 +40,10 @@ struct Painting: Decodable {
     )
     id = try artObjectContaner.decode(String.self, forKey: .id)
     title = try artObjectContaner.decode(String.self, forKey: .title)
-    description = try artObjectContaner.decode(String.self, forKey: .description)
+    description = try artObjectContaner.decodeIfPresent(String.self, forKey: .description)
     makers = try artObjectContaner.decode([Maker].self, forKey: .makers)
-    let imageContainer = try artObjectContaner.nestedContainer(
-      keyedBy: ImageKeys.self,
-      forKey: .imageURL
-    )
-    imageURL = try imageContainer.decode(URL.self, forKey: .url)
+    
+    image = try artObjectContaner.decode(Image.self, forKey: .image)
     var colorsContainer = try artObjectContaner.nestedUnkeyedContainer(forKey: .colors)
     var colors: [String] = []
     while !colorsContainer.isAtEnd {
@@ -59,6 +52,12 @@ struct Painting: Decodable {
       colors.append(color)
     }
     self.colors = colors
+  }
+  
+  struct Image: Decodable {
+    let url: URL
+    let width: CGFloat
+    let height: CGFloat
   }
 }
 
