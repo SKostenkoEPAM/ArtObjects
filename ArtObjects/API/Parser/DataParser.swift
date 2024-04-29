@@ -13,12 +13,30 @@ protocol DataParserProtocol {
 
 class DataParser: DataParserProtocol {
   private var jsonDecoder: JSONDecoder
+  private static let yearDateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy"
+    return dateFormatter
+  }()
+  
+  private static let yearMonthDayDateFormatter: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    return dateFormatter
+  }()
   
   init(jsonDecoder: JSONDecoder = JSONDecoder()) {
     self.jsonDecoder = jsonDecoder
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd"
-    jsonDecoder.dateDecodingStrategy = .formatted(dateFormatter)
+    jsonDecoder.dateDecodingStrategy = .custom {
+      let container = try $0.singleValueContainer()
+      let dateString = try container.decode(String.self)
+      let dateFormatter = dateString.count < 5 ? Self.yearDateFormatter : Self.yearMonthDayDateFormatter
+      let date = dateFormatter.date(from: dateString)
+      guard let date else {
+        throw DecodingError.dataCorruptedError(in: container, debugDescription: "Cannot decode date")
+      }
+      return date
+    }
   }
   
   func parse<T: Decodable>(data: Data) throws -> T {
