@@ -91,6 +91,7 @@ class PaintingView: UIView {
   
   private func setupLayout() {
     backgroundColor = .systemBackground
+    accessibilityIdentifier = "PaintingView"
     addSubview(scrollView)
     NSLayoutConstraint.activate([
       scrollView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),

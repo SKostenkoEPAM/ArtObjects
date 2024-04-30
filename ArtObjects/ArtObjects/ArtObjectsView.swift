@@ -24,6 +24,7 @@ class ArtObjectsView: UIView {
   private func setupLayout() {
     addSubview(collectionView)
     collectionView.translatesAutoresizingMaskIntoConstraints = false
+    collectionView.accessibilityIdentifier = "ArtObjectsCollectionView"
     NSLayoutConstraint.activate([
       collectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
       collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),

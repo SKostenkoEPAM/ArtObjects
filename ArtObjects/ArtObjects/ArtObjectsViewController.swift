@@ -46,7 +46,7 @@ class ArtObjectsViewController: UIViewController, UICollectionViewDelegate {
   }()
   
   private let contentView = ArtObjectsView()
-  private let viewModel = ArtObjectsViewModel()
+  private let viewModel = ArtObjectsViewModel(requestManager: RequestManager())
   
   override func loadView() {
     view = contentView

@@ -23,7 +23,11 @@ class ArtObjectsViewModel {
   private var total = 0
   private var isFetchInProgress = false
   
-  private let requestManager = RequestManager()
+  private let requestManager: RequestManagerProtocol
+  
+  init(requestManager: RequestManagerProtocol) {
+    self.requestManager = requestManager
+  }
   
   var totalCount: Int {
     return total
